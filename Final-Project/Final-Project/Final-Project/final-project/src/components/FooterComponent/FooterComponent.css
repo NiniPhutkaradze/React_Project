@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.footerPart{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+.footerLinks h3{
+    font-size: 12px;
+    font-family: Arimo, sans-serif;
+}
+
+.footerLinks{
+    margin-top: 50px;
+}
+
+.footerLinks ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.footerSection{
+    margin-top: 110px;
+    background-color: #FBFBFB;
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerLinks ul li a{
+    line-height: 25px;
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+}
+
+.email-input-container {
+    background-color: #FBFBFB;
+    margin-top: 25px;
+}
+
+.email-input-container input{
+    background-color: #FBFBFB;
+}
+
+.email-input-container img{
+    padding-left: 10px;
+}
+
+.email-input-container h3{
+    margin-top: 30px;
+}
+
+.email-input {
+    border: none;
+    font-size: 16px;
+}
+
+input.email-input {
+    padding: 10px 0;
+    width: 250px;
+    border-bottom: 1px solid;
+    margin-top: 30px;
+}
+
+.email-input::placeholder {
+    color: #aaa;
+}
+
+.footerBottomPart{
+    max-width: 1240px; 
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    border-top: 1px solid #E8E8E8;
+    padding: 30px 0 25px 0;
+}
+
+.detalis{
+    gap: 10px;
+    display: flex;
+    font-family: Lato, sans-serif;
+}
+
+.differentFooterLinks{
+    display: none;
+}
+
+.cardImg{
+    padding-right: 15px;
+}
+
+.leftSide{
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 768px){
+    .inputFooterLinks{
+        display: none;
+    }
+    
+    .differentFooterLinks{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerBottomPart{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .footerPart {
+        gap: 30px;
+    }
+
+    .footerBottomPart{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rightSide{
+        padding-top: 10px;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+

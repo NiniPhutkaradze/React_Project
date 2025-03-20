@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.background {
+    background: url(../../assets/imageFolder/hero.png);
+    background-position: center;
+    max-width: 1366px;
+    height: 648px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgSection{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.imgInfo{
+    margin: 210px 110px 0 0;
+}
+
+.imgText{
+    max-width: 490px; 
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    color: white;
+}
+
+.imgButton{
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    border: 6px solid white;
+    padding: 15px 20px 15px 36px;
+    max-width: 185px;
+    margin-top: 50px;
+    margin-left: 160px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+.imgButton {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .imgButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .imgButton:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .imgButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .imgButton:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+@media only screen and (max-width: 584px){
+    .imgInfo{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .imgButton{margin-left: 60px;}
+
+    .imgText 
+    { font-size: 30px;
+      max-width: 300px;}
+
+}

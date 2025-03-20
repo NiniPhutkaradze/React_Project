@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.topSellersParagraph{
+   font-size: 20px;
+   margin-top: 20px;
+   font-family: Lato, sans-serif;
+}
+
+.topSellersHeading{
+   font-family: Arimo, sans-serif;
+   font-size: 36px;
+   line-height: 48px;
+}
+
+.topSellersDetalis{
+   text-align: center;
+   margin-top: 90px;
+}
+
+.topSellerImages{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   margin-top: 80px;
+}
+
+.topSellerBtn{
+   font-size: 16px;
+   background-color:#024E82;
+   padding: 20px 35px;
+   color: white;
+   font-family: Lato, sans-serif;
+   cursor: pointer;
+}
+
+.topSellerBtn {
+   color: #FFF;
+   transition: all 0.3s;
+   position: relative;
+ }
+ .topSellerBtn{
+   transition: all 0.3s;
+ }
+ .topSellerBtn::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   opacity: 0;
+   transition: all 0.3s;
+   border-top-width: 1px;
+   border-bottom-width: 1px;
+   border-top-style: solid;
+   border-bottom-style: solid;
+   border-top-color: rgba(255,255,255,0.5);
+   border-bottom-color: rgba(255,255,255,0.5);
+   transform: scale(0.1, 1);
+ }
+ .topSellerBtn:hover span {
+   letter-spacing: 2px;
+ }
+ .topSellerBtn:hover::before {
+   opacity: 1; 
+   transform: scale(1, 1); 
+ }
+ .topSellerBtn::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   transition: all 0.3s;
+   background-color: rgba(255,255,255,0.1);
+ }
+ .topSellerBtn:hover::after {
+   opacity: 0; 
+   transform: scale(0.1, 1);
+ }
+ 
+
+.topSellerButton{
+   text-align: center;
+   margin-top: 140px;
+}
+
+.topSellerImgDetalis p{
+   padding-top: 5px;
+   font-family: Lato, sans-serif;
+   color: #024E82;
+ }
+ 
+ .topSellerImgDetalis h3{
+   font-family: Baloo, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+ }
+
+ .topSellerImgDetalis{
+   padding-top: 15px;
+   text-align: center;
+ }
+
+ .animatedButtonTwo {
+   margin-top: 10px;
+   width: 200px;
+   height: 50px;
+   border: none;
+   outline: none;
+   color: #fff;
+   background: #111;
+   cursor: pointer;
+   position: relative;
+   z-index: 0;
+   border-radius: 10px;
+ }
+ 
+ .animatedButtonTwo:before {
+   content: '';
+   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+   position: absolute;
+   top: -2px;
+   left:-2px;
+   background-size: 400%;
+   z-index: -1;
+   filter: blur(5px);
+   width: calc(100% + 4px);
+   height: calc(100% + 4px);
+   animation: glowing 20s linear infinite;
+   opacity: 0;
+   transition: opacity .3s ease-in-out;
+   border-radius: 10px;
+ }
+ 
+ .animatedButtonTwo:active {
+   color: #000
+ }
+ 
+ .animatedButtonTwo:active:after {
+   background: transparent;
+ }
+ 
+ .animatedButtonTwo:hover:before {
+   opacity: 1;
+ }
+ 
+ .animatedButtonTwo:after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: #111;
+   left: 0;
+   top: 0;
+   border-radius: 10px;
+ }
+ 
+ @keyframes glowing {
+   0% { background-position: 0 0; }
+   50% { background-position: 400% 0; }
+   100% { background-position: 0 0; }
+ }
+ 
